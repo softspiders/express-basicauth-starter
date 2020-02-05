@@ -9,16 +9,16 @@ function getRequest(url) {
 	})
 		.then(response => {
 			if (response.status === 401) {
-      console.log(response.statusText);
-    } else {
-    	response.json()
-    	.then(json => {
-			console.log(json);
-			return json;
-		})
-		.catch(err => {
-	    console.log(err)
-  });
+      	console.log(response.statusText);
+    	} else {
+	    	response.json()
+	    	.then(json => {
+					console.log(json);
+					return json;
+				})
+					.catch(err => {
+				    console.log(err)
+  				});
 			}
 		})
 		
