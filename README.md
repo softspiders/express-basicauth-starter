@@ -1,20 +1,21 @@
 SOFTSPIDERS
 
-# react-router-starter
+# express-basic-auth-starter
 
 UNDER DEVELOPMENT
 
 ## Feature tags
 
-- react-router
+- basic-auth
+- express
 - starter
 - template
 
 ---
 
-## Author
+## Authors
 
-[Serg Rajab](https://github.com/SergRajab)
+- [Danila Asoyan](https://github.com/Danilkashtan)
 
 ---
 
