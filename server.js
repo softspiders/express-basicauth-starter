@@ -12,7 +12,7 @@ app.listen(port, (err) => {
 })
 
 app.get("/api", (req, res) => {
-	 if (  req.headers.authorization !== '123') return res.status(401).send() // Access denied.   
+	if (req.headers.authorization !== 'username:password') return res.status(401).send() // Access denied.   
   // Access granted...
 	res.send({method: "GET"})
 });
