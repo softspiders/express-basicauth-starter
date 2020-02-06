@@ -15,7 +15,7 @@ UNDER DEVELOPMENT
 
 ## Authors
 
-- [Danila Asoyan](https://github.com/Danilkashtan)
+[Danila Asoyan](https://github.com/Danilkashtan)
 
 ---
 
