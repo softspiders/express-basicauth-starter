@@ -4,7 +4,7 @@ const fetch = isBrowser ? window.fetch : require("cross-fetch");
 const user = {username: "username", password: "password"}
 // const user = {username: "username", password: "wrongpassword"}
 
-function getRequest(url) {
+function getRequest(url, user) {
 	return fetch(url, {
 		headers: {
       "Authorization": user.username + ":" + user.password
@@ -12,19 +12,21 @@ function getRequest(url) {
 	})
 		.then(response => {
 			if (response.status === 401) {
-      	console.log(response.statusText);
-    	} else {
-	    	response.json()
-	    	.then(json => {
-					console.log(json);
-					return json;
-				})
+				return response.statusText;
+			} else {
+				response.json()
+		    	.then(json => {
+						console.log(json);
+						return json;
+					})
 					.catch(err => {
 				    console.log(err)
   				});
-			}
+				}
 		})
-		
 };
 
-getRequest('http://localhost:3000/api');
+getRequest('http://localhost:3000/api', user);
+
+
+isBrowser ? getRequest(url, user) : exports.getRequest = getRequest;
