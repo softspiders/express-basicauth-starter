@@ -14,7 +14,7 @@ function getRequest(url, user) {
 			if (response.status === 401) {
 				return response.statusText;
 			} else {
-				response.json()
+				return response.json()
 		    	.then(json => {
 						console.log(json);
 						return json;
