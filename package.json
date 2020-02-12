@@ -4,7 +4,8 @@
   "description": "express-basic-auth-starter",
   "main": "client.js",
   "scripts": {
-    "start:server": "node server.js"
+    "start:server": "node server.js",
+    "start:client": "node client.js"
   },
   "keywords": [
     "auth",

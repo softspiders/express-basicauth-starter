@@ -32,14 +32,16 @@ npm i
 
 ## Run
 
+In first command prompt run server: 
+
 ```
-In first command prompt run server:
-
 npm run start:server
+```
 
-In second command prompt run tests:
+In second command prompt run client:
 
-npm run test
+```
+npm run start:client
 ```
 
 ---
