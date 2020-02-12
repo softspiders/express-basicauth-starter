@@ -1,0 +1,24 @@
+{
+  "name": "express-basic-auth-starter",
+  "version": "1.0.0",
+  "description": "express-basic-auth-starter",
+  "main": "client.js",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "node client.js"
+  },
+  "keywords": [
+    "auth",
+    "express",
+    "node",
+    "softspiders",
+    "starter",
+    "template"
+  ],
+  "author": "Danila Asoyan (https://github.com/Danilkashtan), Alexander Lapygin (https://github.com/AlexanderLapygin)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest",
+    "cross-fetch": "latest"
+  }
+}

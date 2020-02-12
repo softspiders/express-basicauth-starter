@@ -1,13 +1,16 @@
-SOFTSPIDERS
+[SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
 # express-basic-auth-starter
 
-UNDER DEVELOPMENT
+Minimalistic basic-authentication starter on Express
+
+---
 
 ## Feature tags
 
-- basic-auth
+- auth
 - express
+- node
 - starter
 - template
 
@@ -21,13 +24,32 @@ UNDER DEVELOPMENT
 
 ## Install
 
-TBD
+```
+npm i
+```
 
 ---
 
 ## Run
 
-TBD
+In first command prompt run server: 
+
+```
+npm run start:server
+```
+
+In second command prompt run client:
+
+```
+npm run start:client
+```
+
+If the starter has worked correctly, in command prompt you should see:
+
+```
+Unauthorized
+{ method: 'GET' }
+```
 
 ---
 
