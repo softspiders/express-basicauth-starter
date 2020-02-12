@@ -8,7 +8,7 @@ Minimalistic basic-authentication starter on Express
 
 ## Feature tags
 
-- auth
+- basic-auth
 - express
 - node
 - starter
