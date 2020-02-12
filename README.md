@@ -44,6 +44,13 @@ In second command prompt run client:
 npm run start:client
 ```
 
+If the starter has worked correctly, in command prompt you should see:
+
+```
+Unauthorized
+{ method: 'GET' }
+```
+
 ---
 
 ### License
