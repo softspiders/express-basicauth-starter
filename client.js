@@ -1,7 +1,7 @@
 const fetch = require("cross-fetch");
 
-const authorizedUser = {username: "username", password: "password"}
-const unauthorizedUser = {username: "username", password: "wrongpassword"}
+const authorizedUser = {username: "username", password: "password"};
+const unauthorizedUser = {username: "username", password: "wrongpassword"};
 
 function getRequest(url, user) {
 	return fetch(url, {
