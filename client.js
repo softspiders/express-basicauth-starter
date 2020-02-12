@@ -1,8 +1,7 @@
-const isBrowser = typeof window !== "undefined" && window.fetch
-const fetch = isBrowser ? window.fetch : require("cross-fetch");
+const fetch = require("cross-fetch");
 
-const user = {username: "username", password: "password"}
-// const user = {username: "username", password: "wrongpassword"}
+const authorizedUser = {username: "username", password: "password"}
+const unauthorizedUser = {username: "username", password: "wrongpassword"}
 
 function getRequest(url, user) {
 	return fetch(url, {
@@ -12,6 +11,7 @@ function getRequest(url, user) {
 	})
 		.then(response => {
 			if (response.status === 401) {
+				console.log(response.statusText);
 				return response.statusText;
 			} else {
 				return response.json()
@@ -20,13 +20,16 @@ function getRequest(url, user) {
 						return json;
 					})
 					.catch(err => {
-				    console.log(err)
+				    console.log(err);
   				});
 				}
-		})
+		});
 };
 
-getRequest('http://localhost:3000/api', user);
+//Access denied
+getRequest('http://localhost:3000/api', unauthorizedUser);
 
+//Access granted
+getRequest('http://localhost:3000/api', authorizedUser);
 
-isBrowser ? getRequest(url, user) : exports.getRequest = getRequest;
+exports.getRequest = getRequest;

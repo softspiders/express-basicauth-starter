@@ -1,13 +1,16 @@
-SOFTSPIDERS
+[SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
 # express-basic-auth-starter
 
-UNDER DEVELOPMENT
+Minimalistic basic-authentication starter on Express
+
+---
 
 ## Feature tags
 
-- basic-auth
+- auth
 - express
+- node
 - starter
 - template
 
@@ -15,19 +18,29 @@ UNDER DEVELOPMENT
 
 ## Authors
 
-- [Danila Asoyan](https://github.com/Danilkashtan)
+[Danila Asoyan](https://github.com/Danilkashtan)
 
 ---
 
 ## Install
 
-TBD
+```
+npm i
+```
 
 ---
 
 ## Run
 
-TBD
+```
+In first command prompt run server:
+
+npm run start:server
+
+In second command prompt run tests:
+
+npm run test
+```
 
 ---
 
