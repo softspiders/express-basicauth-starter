@@ -1,8 +1,8 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# express-basic-auth-starter
+# express-basicauth-starter
 
-Minimalistic basic-authentication starter on Express
+Minimalistic basic authentication starter on Express
 
 ---
 
